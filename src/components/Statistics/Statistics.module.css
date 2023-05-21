@@ -1,0 +1,15 @@
+.positive {
+    font-weight: 500;
+    font-size: 18px;
+  }
+  
+  .positive > span {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
