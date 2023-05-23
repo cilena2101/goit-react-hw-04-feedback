@@ -26,7 +26,7 @@ export const App = () => {
 	 }
 	};
 
-  const countTotalFeedback = () => {
+ 	 const countTotalFeedback = () => {
 	return good + neutral + bad;
   };
 
@@ -60,5 +60,4 @@ export const App = () => {
 		  )}
 		</>
 	);
-	}
-  
+}  
