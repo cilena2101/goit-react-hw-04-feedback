@@ -5,23 +5,22 @@ import { Section } from './Section/Section';
 import { Notification } from './Notification/Notification';
 
 export const App = () => {
-
 	const [good, setGood] = useState(0);
 	const [neutral, setNeutral] = useState(0);
 	const [bad, setBad] = useState (0);
 
-	const updateCount = evt => {
-	 const {name} = evt.target;
+	const updateCount = e => {
+	 const {name} = e.target;
 	 switch (name) {
 		case 'good':
-		setGood(good + 1);
-		break;
-		case 'neatral': 
-		setNeutral(neutral +1);
-		break;
+			setGood(good + 1);
+			break;
+		case 'neutral': 
+			setNeutral(neutral + 1);
+			break;
 		case 'bad':
-		setBad(bad +1);
-		break;
+			setBad(bad + 1);
+			break;
 		default:
 			break;
 	 }
@@ -36,7 +35,7 @@ export const App = () => {
 		return total ? Math.round((good * 100) / total) : 0;
 	};
 
-  const options = ['good', 'neatral', 'bad'];
+  const options = ['good', 'neutral', 'bad'];
   return (
 		<>
 		  <Section title="Please leave feedback">

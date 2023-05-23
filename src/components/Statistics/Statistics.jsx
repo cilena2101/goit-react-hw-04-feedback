@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types';
-import css from './Statistics.module.css';
+import PropTypes from "prop-types";
+import css from "./Statistics.module.css";
 
 export const Statistics = ({
   good = 0,
@@ -23,8 +23,8 @@ export const Statistics = ({
       <li>
         Total: <span>{total}</span>
       </li>
-      <li className={css.positive}>    
-       Positive feedback: <span>{positivePercentage}%</span>
+      <li className={css.positive}>
+        Positive feedback: <span>{positivePercentage}%</span>
       </li>
     </ul>
   );
